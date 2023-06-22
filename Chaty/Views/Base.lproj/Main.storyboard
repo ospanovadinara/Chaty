@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chaty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apm-Iu-E9s" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chaty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apm-Iu-E9s">
                                 <rect key="frame" x="129" y="433.66666666666669" width="135" height="54"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
                                 <color key="textColor" red="0.2823529541" green="0.62745100259999997" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -157,7 +157,13 @@
                             <constraint firstItem="hvs-bV-JD7" firstAttribute="top" secondItem="bs3-X6-dFF" secondAttribute="top" id="xQe-Gh-FDg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="UdZ-E4-S2L"/>
+                    <navigationItem key="navigationItem" id="UdZ-E4-S2L">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="EGx-jt-1LP">
+                            <connections>
+                                <action selector="logOutPressed:" destination="WAP-16-Ige" id="xEJ-ok-Df7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextfield" destination="An4-me-cE1" id="14r-fc-R8K"/>
                         <outlet property="tableView" destination="hvs-bV-JD7" id="1Ky-Tw-hbx"/>
@@ -220,7 +226,7 @@
                                         <rect key="frame" x="49" y="50" width="296" height="45"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -276,7 +282,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="hNd-dF-h6k">
                                         <rect key="frame" x="0.0" y="20" width="393" height="137"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M9Z-xN-1SC">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@2.com" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M9Z-xN-1SC">
                                         <rect key="frame" x="48" y="50" width="297" height="45"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -306,13 +312,12 @@
                                         </state>
                                         <connections>
                                             <action selector="loginPressed:" destination="SRY-da-ghA" eventType="touchUpInside" id="b0I-Pt-m6H"/>
-                                            <action selector="registerPressed:" destination="SRY-da-ghA" eventType="touchUpInside" id="eaN-gl-Kni"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="fGp-rJ-5nc">
                                         <rect key="frame" x="0.0" y="20" width="393" height="137"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lST-hQ-rAp">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lST-hQ-rAp">
                                         <rect key="frame" x="49" y="50" width="296" height="45"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -377,13 +382,8 @@
             <point key="canvasLocation" x="-254.19847328244273" y="14.788732394366198"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="Apm-Iu-E9s">
-            <size key="intrinsicContentSize" width="135" height="54"/>
-        </designable>
-    </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="tVu-XT-o6s"/>
+        <segue reference="JN0-4o-uKG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo" width="1024" height="1024"/>

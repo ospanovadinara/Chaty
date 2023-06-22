@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18FBFA7B3633B725C1A96379 /* Pods_Chaty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E70D326F2A0E66D5659DA41 /* Pods_Chaty.framework */; };
+		2780734F2A437624000E6B04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2780734E2A437624000E6B04 /* GoogleService-Info.plist */; };
 		27C617162A42C31F00226A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C617152A42C31F00226A36 /* AppDelegate.swift */; };
 		27C617182A42C31F00226A36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C617172A42C31F00226A36 /* SceneDelegate.swift */; };
 		27C6171A2A42C31F00226A36 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C617192A42C31F00226A36 /* WelcomeViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2780734E2A437624000E6B04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		27C617122A42C31F00226A36 /* Chaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C617152A42C31F00226A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C617172A42C31F00226A36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +56,6 @@
 				67CD155C620112FC0FBC5A9C /* Pods-Chaty.debug.xcconfig */,
 				8298228FAE64CA8059C8C863 /* Pods-Chaty.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -94,6 +95,7 @@
 				27C6171E2A42C32000226A36 /* Assets.xcassets */,
 				27C617202A42C32000226A36 /* LaunchScreen.storyboard */,
 				27C617232A42C32000226A36 /* Info.plist */,
+				2780734E2A437624000E6B04 /* GoogleService-Info.plist */,
 			);
 			path = Chaty;
 			sourceTree = "<group>";
@@ -128,7 +130,7 @@
 				27C6170E2A42C31F00226A36 /* Sources */,
 				27C6170F2A42C31F00226A36 /* Frameworks */,
 				27C617102A42C31F00226A36 /* Resources */,
-				6736328C2567A61BF95D3049 /* [CP] Embed Pods Frameworks */,
+				74E5DC2C3D322A4305687586 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27C617222A42C32000226A36 /* LaunchScreen.storyboard in Resources */,
+				2780734F2A437624000E6B04 /* GoogleService-Info.plist in Resources */,
 				27C6171F2A42C32000226A36 /* Assets.xcassets in Resources */,
 				27C6171D2A42C31F00226A36 /* Main.storyboard in Resources */,
 			);
@@ -186,7 +189,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6736328C2567A61BF95D3049 /* [CP] Embed Pods Frameworks */ = {
+		74E5DC2C3D322A4305687586 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
